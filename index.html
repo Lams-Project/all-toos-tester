@@ -1,0 +1,610 @@
+<!DOCTYPE html><html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>ALX Tools — All In One Tools</title><link rel="stylesheet" href="./css/style.css?v=2">
+
+</head><body><!-- SIDEBAR --><aside class="sidebar" id="sidebar"><div class="brand">
+    <div class="brand-icon">A</div>
+    <div>
+        <strong>ALX</strong>
+        <span>TOOLS</span>
+    </div>
+</div>
+
+<nav>
+    <p class="nav-title">MENU</p>
+
+    <a href="#" class="nav-item active" data-page="home">
+        <span>⌂</span>
+        Home
+    </a>
+
+    <a href="#tools" class="nav-item" data-page="tools">
+        <span>▦</span>
+        All Tools
+    </a>
+
+    <a href="#popular" class="nav-item" data-page="popular">
+        <span>🔥</span>
+        Popular
+    </a>
+
+    <p class="nav-title">CATEGORIES</p>
+
+    <a href="#download" class="nav-item">
+        <span>⬇</span>
+        Download
+    </a>
+
+    <a href="#image" class="nav-item">
+        <span>▧</span>
+        Image
+    </a>
+
+    <a href="#video" class="nav-item">
+        <span>▶</span>
+        Video
+    </a>
+
+    <a href="#audio" class="nav-item">
+        <span>♫</span>
+        Audio
+    </a>
+
+    <a href="#utility" class="nav-item">
+        <span>⚙</span>
+        Utility
+    </a>
+
+</nav>
+
+<div class="sidebar-bottom">
+    <div class="mini-card">
+        <span>⚡</span>
+        <div>
+            <b>ALX Tools</b>
+            <small>Fast & Simple</small>
+        </div>
+    </div>
+</div>
+
+</aside><!-- MAIN --><main class="main"><!-- TOPBAR -->
+<header class="topbar">
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <div class="top-search">
+        <span>⌕</span>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search tools..."
+            autocomplete="off">
+    </div>
+
+    <button class="theme-btn" id="themeBtn">☾</button>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-badge">
+        <span>✦</span>
+        ALL-IN-ONE WEB TOOLS
+    </div>
+
+    <h1>
+        Everything you need.
+        <br>
+        <span>In one place.</span>
+    </h1>
+
+    <p>
+        Powerful, simple and fast online tools
+        for downloading, converting, editing
+        and managing your files.
+    </p>
+
+    <div class="hero-search">
+
+        <span>⌕</span>
+
+        <input
+            id="heroSearch"
+            type="text"
+            placeholder="What tool are you looking for?">
+
+        <button onclick="runSearch()">
+            Search
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- STATS -->
+<section class="stats">
+
+    <div>
+        <strong>20+</strong>
+        <span>Tools</span>
+    </div>
+
+    <div>
+        <strong>5</strong>
+        <span>Categories</span>
+    </div>
+
+    <div>
+        <strong>100%</strong>
+        <span>Free</span>
+    </div>
+
+    <div>
+        <strong>Fast</strong>
+        <span>Processing</span>
+    </div>
+
+</section>
+
+
+<!-- CONTENT -->
+<section class="content" id="tools">
+
+    <div class="section-head">
+        <div>
+            <span class="eyebrow">EXPLORE</span>
+            <h2>All Tools</h2>
+        </div>
+
+        <div class="filter-wrap">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="download">
+                Download
+            </button>
+
+            <button class="filter" data-filter="image">
+                Image
+            </button>
+
+            <button class="filter" data-filter="video">
+                Video
+            </button>
+
+            <button class="filter" data-filter="audio">
+                Audio
+            </button>
+
+            <button class="filter" data-filter="utility">
+                Utility
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- TOOL GRID -->
+    <div class="tool-grid" id="toolGrid">
+
+        <!-- TIKTOK -->
+        <article
+            class="tool-card featured"
+            data-category="download"
+            data-name="tiktok downloader">
+
+            <div class="tool-top">
+                <div class="tool-icon pink">♪</div>
+                <span class="hot">HOT</span>
+            </div>
+
+            <h3>TikTok Downloader</h3>
+
+            <p>
+                Download TikTok videos and audio
+                using a public URL.
+            </p>
+
+            <div class="formats">
+                <span>MP4</span>
+                <span>MP3</span>
+                <span>JPG</span>
+                <span>PNG</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('tiktok')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- YOUTUBE -->
+        <article
+            class="tool-card"
+            data-category="download"
+            data-name="youtube downloader">
+
+            <div class="tool-top">
+                <div class="tool-icon red">▶</div>
+            </div>
+
+            <h3>YouTube Downloader</h3>
+
+            <p>
+                Download publicly available
+                YouTube media.
+            </p>
+
+            <div class="formats">
+                <span>MP4</span>
+                <span>MP3</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('youtube')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- IMAGE -->
+        <article
+            class="tool-card"
+            data-category="image"
+            data-name="image converter">
+
+            <div class="tool-top">
+                <div class="tool-icon purple">▧</div>
+            </div>
+
+            <h3>Image Converter</h3>
+
+            <p>
+                Convert images between popular
+                formats directly in your browser.
+            </p>
+
+            <div class="formats">
+                <span>JPG</span>
+                <span>PNG</span>
+                <span>WEBP</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('image-converter')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- COMPRESS -->
+        <article
+            class="tool-card"
+            data-category="image"
+            data-name="image compressor">
+
+            <div class="tool-top">
+                <div class="tool-icon blue">▣</div>
+            </div>
+
+            <h3>Image Compressor</h3>
+
+            <p>
+                Reduce image file size while
+                keeping good quality.
+            </p>
+
+            <div class="formats">
+                <span>JPG</span>
+                <span>PNG</span>
+                <span>WEBP</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('compressor')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- RESIZER -->
+        <article
+            class="tool-card"
+            data-category="image"
+            data-name="image resizer">
+
+            <div class="tool-top">
+                <div class="tool-icon cyan">↔</div>
+            </div>
+
+            <h3>Image Resizer</h3>
+
+            <p>
+                Resize images to any dimensions
+                you need.
+            </p>
+
+            <div class="formats">
+                <span>IMAGE</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('resizer')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- VIDEO -->
+        <article
+            class="tool-card"
+            data-category="video"
+            data-name="video converter">
+
+            <div class="tool-top">
+                <div class="tool-icon orange">▶</div>
+            </div>
+
+            <h3>Video Converter</h3>
+
+            <p>
+                Convert local video files
+                between supported formats.
+            </p>
+
+            <div class="formats">
+                <span>VIDEO</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('video')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- AUDIO -->
+        <article
+            class="tool-card"
+            data-category="audio"
+            data-name="audio converter">
+
+            <div class="tool-top">
+                <div class="tool-icon green">♫</div>
+            </div>
+
+            <h3>Audio Converter</h3>
+
+            <p>
+                Work with local audio files
+                directly from your device.
+            </p>
+
+            <div class="formats">
+                <span>MP3</span>
+                <span>WAV</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('audio')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- QR -->
+        <article
+            class="tool-card"
+            data-category="utility"
+            data-name="qr generator">
+
+            <div class="tool-top">
+                <div class="tool-icon yellow">▦</div>
+            </div>
+
+            <h3>QR Generator</h3>
+
+            <p>
+                Generate QR codes from text
+                or URLs.
+            </p>
+
+            <div class="formats">
+                <span>QR</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('qr')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- JSON -->
+        <article
+            class="tool-card"
+            data-category="utility"
+            data-name="json formatter">
+
+            <div class="tool-top">
+                <div class="tool-icon cyan">{ }</div>
+            </div>
+
+            <h3>JSON Formatter</h3>
+
+            <p>
+                Format and validate JSON
+                data instantly.
+            </p>
+
+            <div class="formats">
+                <span>JSON</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('json')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- BASE64 -->
+        <article
+            class="tool-card"
+            data-category="utility"
+            data-name="base64 encoder decoder">
+
+            <div class="tool-top">
+                <div class="tool-icon violet">⌁</div>
+            </div>
+
+            <h3>Base64 Tool</h3>
+
+            <p>
+                Encode and decode Base64
+                text quickly.
+            </p>
+
+            <div class="formats">
+                <span>ENCODE</span>
+                <span>DECODE</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('base64')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- URL -->
+        <article
+            class="tool-card"
+            data-category="utility"
+            data-name="url encoder decoder">
+
+            <div class="tool-top">
+                <div class="tool-icon blue">🔗</div>
+            </div>
+
+            <h3>URL Encoder</h3>
+
+            <p>
+                Encode or decode URL strings
+                instantly.
+            </p>
+
+            <div class="formats">
+                <span>URL</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('url')">
+                Open Tool →
+            </button>
+
+        </article>
+
+
+        <!-- PASSWORD -->
+        <article
+            class="tool-card"
+            data-category="utility"
+            data-name="password generator">
+
+            <div class="tool-top">
+                <div class="tool-icon green">⚿</div>
+            </div>
+
+            <h3>Password Generator</h3>
+
+            <p>
+                Generate random passwords
+                locally in your browser.
+            </p>
+
+            <div class="formats">
+                <span>SECURE</span>
+            </div>
+
+            <button
+                class="open-tool"
+                onclick="openTool('password')">
+                Open Tool →
+            </button>
+
+        </article>
+
+    </div>
+
+    <div id="noResult" class="no-result">
+        <div>⌕</div>
+        <h3>No tools found</h3>
+        <p>Try another keyword.</p>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-brand">
+        <b>ALX<span>TOOLS</span></b>
+        <p>
+            Simple tools for everyday tasks.
+        </p>
+    </div>
+
+    <div>
+        <small>
+            © 2026 ALX Tools. All rights reserved.
+        </small>
+    </div>
+
+</footer>
+
+</main><!-- TOOL MODAL --><div class="modal" id="toolModal"><div class="modal-box">
+
+    <button
+        class="modal-close"
+        onclick="closeTool()">
+        ×
+    </button>
+
+    <div id="modalContent"></div>
+
+</div>
+
+</div><script src="js/tools.js"></script><script src="js/app.js"></script></body>
+</html>
